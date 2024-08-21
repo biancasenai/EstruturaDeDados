@@ -103,7 +103,7 @@
         Console.WriteLine(); //pula linha em branco
         foreach (var fila in filaBanco)
         {
-            Console.WriteLine(pessoa);
+            Console.WriteLine(fila);
         }
         bool achou = filaBanco.Contains("Manoel");
 
