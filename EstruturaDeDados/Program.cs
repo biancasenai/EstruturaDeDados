@@ -79,6 +79,75 @@
 
         }
 
+        Console.WriteLine(); //pula linha em branco
+        Console.WriteLine("===========================");
+        Console.WriteLine(); //pula linha em branco
+
+        //TRABALHANDO COM FILA
+        /* criar uma fila (queue ) */
+        Queue<string> filaBanco = new Queue<string>();
+
+        /* adicionar elementos em uma fila */
+        filaBanco.Enqueue("André");
+        filaBanco.Enqueue("João");
+        filaBanco.Enqueue("Maria");
+        filaBanco.Enqueue("Bia");
+
+        foreach (var pessoa in filaBanco)
+        {
+            Console.WriteLine(pessoa);
+        }
+
+        Console.WriteLine(); //pula linha em branco
+        Console.WriteLine("===========================");
+        Console.WriteLine(); //pula linha em branco
+        foreach (var fila in filaBanco)
+        {
+            Console.WriteLine(pessoa);
+        }
+        bool achou = filaBanco.Contains("Manoel");
+
+        if (achou == true)
+        {
+            Console.WriteLine("A pessoa está na fila");
+        }
+        else
+        {
+            Console.WriteLine("A pessoa NÃo está na fila");
+        }
+
+        Console.WriteLine(); //pula linha em branco
+        Console.WriteLine("===========================");
+        Console.WriteLine(); //pula linha em branco
+
+
+
+        //TRABALHANDO COM PILA(STACH)
+        /*criando uma pilha*/
+        Stack<string> Livros = new Stack<string>();
+
+        /*adicionando elementos em uma pila*/
+        Livros.Push("Chapéuzinho vermelho");
+        Livros.Push("Branca de neve e os setes anões");
+        Livros.Push("Princesa e o sapo");
+
+        foreach (var livros in Livros)
+        {
+            Console.WriteLine(livros);
+        }
+        Console.WriteLine(); //pula linha em branco
+        Console.WriteLine("===========================");
+        Console.WriteLine(); //pula linha em branco
+
+        /* remove o primeiro elememto da pilha */
+        Livros.Pop();
+        foreach (var livro in Livros)
+        {
+            Console.WriteLine(livro);
+        }
+        Console.WriteLine(); //pula linha em branco
+        Console.WriteLine("===========================");
+        Console.WriteLine(); //pula linha em branco
     }
 }
 
